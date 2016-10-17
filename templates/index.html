@@ -1,0 +1,96 @@
+<!doctype html>
+<html>
+<meta charset="utf-8">
+
+{% load staticfiles %}
+      
+    
+<head>
+    <title>DHANKAR-UBER_CHALLENGE_SF_Movie </title>
+    <meta name="viewport" content="initial-scale=1.0, user-scalable=no">
+    
+    <link rel="stylesheet" href="https://code.jquery.com/ui/1.11.4/themes/smoothness/jquery-ui.css">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.5.0/css/font-awesome.min.css">
+    
+      
+<!-- DHANKAR ORIGINAL Location for  STATIC Files -->
+    <link rel="stylesheet" type="text/css" href="{% static 'css/style.css' %}" />
+      
+      <!-- DHANKAR OWN Location for  STATIC Files -->
+      <link href="{% static 'css/style.css' %}" rel="stylesheet">
+
+      
+    <script type="text/javascript">
+      var default_image = '{% static "img/default.png" %}';
+
+//*<!-- DHANKAR OWN Location for  IMG Files May have to delete the one above-->*//
+        var default_image = '{% static "img/default.png" %}';
+
+        
+        
+    </script>
+      
+      <script type="text/javascript">
+
+    
+    var isiPhone = navigator.userAgent.match(/iPhone/i);
+    var isiPod = navigator.userAgent.match(/iPod/i);
+    var isiPad = navigator.userAgent.match(/iPad/i);
+
+	// check for mobile iOS device
+  	if(isiPhone || isiPod || isiPad) {
+  	  	if (!bypassRedirect()) {
+  	  	    alert("redirecting user here");
+  		    //	window.location = '/m';
+  	  	} else {
+  	  	    alert("Hi iPhone User - Welcome to the UBER CHALLENGE - Cheers DHANKAR ");
+  	  	}
+  	} else {
+  	    alert("Hi Desktop / Non iPhone User - Welcome to the UBER CHALLENGE - Cheers DHANKAR ");
+  	}
+
+  	function bypassRedirect() {
+  	    return false;
+  	    // DHANKAR - TBD 
+  	}
+
+</script>
+
+
+
+
+  </head>
+
+  <body>
+      
+      
+ 
+<!-- Light Brown == #f1dabd! --->                   
+                    
+    <div id="floating-panel" style="background-color:#f1dabd;color:white;padding-top:20px;padding-bottom:20px;margin-bottom:0;font-family: Calibri, sans-serif;">
+      <div id="search_bar" style="background-color:#f1dabd;color:white;padding-top:20px;padding-bottom:20px;margin-bottom:0;font-family: Calibri, sans-serif;">
+        <input id="search_text" type="text" placeholder="Search by movie">
+        <input id="submit" type="button" value="Search">
+      </div>
+
+      <div id="message_bar">
+      ERROR - 404 BAD REQUEST 
+      </div>
+    </div>
+
+    <div id="selected_movies" style="background-color:#f1dabd;color:white;padding-top:20px;padding-bottom:20px;margin-bottom:0;font-family: Calibri, sans-serif;">
+      <ul class="movie_list">
+        &nbsp;
+      </ul>
+    </div>
+
+    <div id="map" style="background-color:#f1dabd;color:white;padding-top:20px;padding-bottom:20px;margin-bottom:0;font-family: Calibri, sans-serif;"></div>
+
+    <script src="{% static 'js/script.js' %}"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.0/jquery.min.js"></script>
+    <script src="https://code.jquery.com/ui/1.11.4/jquery-ui.js"></script>
+    <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyDBJnlX8d298-3t6F45FoKrrECkn6s6kHE&libraries=places&callback=initMap" async defer></script>
+
+    
+  </body>
+</html>

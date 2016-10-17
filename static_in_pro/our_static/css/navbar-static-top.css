@@ -1,0 +1,82 @@
+body 
+{
+  min-height: 1000px;
+}
+
+/* COMMENT --- Static Navbar ALL BODY MAIN */
+
+.navbar-static-top 
+{
+  color: black;
+  margin-bottom: 20px;  
+    background-color:#78bac2; /* - Light Green == #78bac2 ! --------*/
+  border-color: #ffa3bb; /* COMMENT --- Thin Line at Bottom -- PINK*/
+}
+
+
+
+/* CSS FILE COMMENT --- Navbar Brand Only */
+
+.navbar-default .navbar-brand 
+{ 
+  color: #ffffff;
+    font-family: Calibri, sans-serif;
+  font-weight: 900;
+  font-size: 70px;
+}
+
+.navbar-default .navbar-brand:hover 
+{
+  color: #ffa3bb; /* COMMENT --- veriHOMEZ HOVER-- Color PINK*/
+}
+
+.navbar-default .navbar-brand1 
+{ 
+  color: #ffffff;
+    font-family: Calibri, sans-serif;
+  text-decoration:none;  
+  font-weight: 900;
+  font-size: 30px;
+}
+
+.navbar-default .navbar-brand1:hover 
+{
+    color: #ffa3bb; /* COMMENT --- Text Hover-- Color PINK -- THIS NEEDS TO BE ON TOP */
+  text-decoration:none; /* COMMENT --- Relative to Color PINK -- THIS NEEDS TO BE at BOTTOM  */
+  
+}
+
+
+
+/* CSS FILE COMMENT --- Navbar Navigation Tags - RENTAL etc includes CART Icon*/
+
+.navbar-default .navbar-nav
+{
+  color: #ffffff;
+    font-family: Calibri, sans-serif;
+  font-weight: 500;
+  font-size: 30px;
+}
+.navbar-default .navbar-nav>li>a:hover {
+  color: yellow;
+}
+
+
+
+
+
+/* COMMENT --- Navbar Toggle - PAGE Top Right OPEN NAVBAR BOX  */
+.navbar-default .navbar-toggle 
+{
+ border-color: transparent !important;
+}
+
+.navbar-toggle:hover 
+{
+	background-color:#ffa3bb!important;
+}
+
+.navbar-toggle 
+{
+	background-color: white!important;
+}
